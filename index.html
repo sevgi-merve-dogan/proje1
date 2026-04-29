@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stellar Cüzdan Bağlantısı (Testnet)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Stellar Cüzdanını Bağla</h1>
+      <p>
+        Bu demo, Stellar testnet için bir cüzdan bağlantısı akışı sağlar.
+        Freighter uzantısı ile bağlanmayı dener ve bağlı hesabı gösterir.
+      </p>
+
+      <div class="actions">
+        <button id="connectBtn">Cüzdanı Bağla</button>
+        <button id="disconnectBtn" class="secondary" disabled>Bağlantıyı Kes</button>
+      </div>
+
+      <section class="card">
+        <h2>Bağlantı Durumu</h2>
+        <p><strong>Ağ:</strong> <span id="network">Testnet</span></p>
+        <p><strong>Adres:</strong> <span id="address">-</span></p>
+        <p><strong>Durum:</strong> <span id="status">Hazır</span></p>
+      </section>
+
+      <p class="note">
+        Not: Freighter yüklü değilse önce tarayıcı uzantısını kurmanız gerekir.
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
